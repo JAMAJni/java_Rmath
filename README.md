@@ -4,13 +4,28 @@ java_Rmath is a Java package providing a Java Native Interface for Rmath library
 Build Instructions
 ------------------
 
-* To compile the package, enter src directory and execute "make". Notice that you may have to change the extension of generated libraries in the Makefile based on your operating system. On OS X you have to change all the extensions of dynamic library to .dylib while on Linux the corresponding extensions are .so
+* To compile the package, enter src directory and copy the Makefile based on the operating system.
 
-* To clean generated file, type “make clean” on the command line. 
+For Linux user, use the following commands:
+```
+cd src
+cp Makefile.linux Makefile
+Make
+```
+
+For Mac user, use the following commands:
+```
+cd src
+cp Makefile.mac Makefile
+Make
+```
+* Then execute `make`.
+
+* To clean generated file, type `make clean` on command line. 
 
 Running the tests
 -----------------
-* For testing, enter test directory and execute “make” . If you want to clean testing results and all class files, type "make clean". 
+* For testing, enter test directory and execute `make` . If you want to clean testing results and all class files, type `make clean`. 
 
 Source Repository
 -----------------
